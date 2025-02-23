@@ -12,7 +12,8 @@
     --bg-color: #080808;
     --second-bg-color: #131313;
     --text-color: white;
-    --main-color: #00ffee;
+    --main-color: #fcb7ff;
+    --second-main-color: #c07bff;
 }
 
 html{
@@ -119,7 +120,6 @@ span{
     width: 32vw;
     border-radius: 50%;
     box-shadow: 0 0 25px var(--main-color);
-    cursor: pointer;
     transition: .4s ease-in-out;
 }
 .home-img:hover img{
@@ -273,9 +273,6 @@ span{
 .experience h2{
     margin-bottom: 5rem;
 }
-
-/*TODO:fix line and dot*/
-
 .timeline-items{
     max-width: 1200px;
     margin: auto;
@@ -302,7 +299,6 @@ span{
 }
 .timeline-item:nth-child(odd){
     padding-right: calc(50% + 30px);
-    text-align: right;
 }
 .timeline-item:nth-child(even){
     padding-left: calc(50% + 30px);
@@ -358,6 +354,68 @@ span{
 ::-webkit-scrollbar-track{
     background-color: var(--bg-color);
 }
+
+
+.projects{
+    background-color: var(--bg-color);
+    color: black;
+}
+.projects h2{
+    margin-bottom: 5rem;
+    color: white;
+}
+.projects-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 2.5rem;
+}
+.projects-container .projects-box .projects-reflection-img {
+    border-radius: 50%;
+    width: 1px;
+    margin-top: 1rem;
+}
+.projects-box{
+    background-color: var(--main-color);
+    height: 300px;
+    border-radius: 3rem;
+    border: 5px solid transparent;
+    cursor: pointer;
+    transition: 0.4s ease-in-out;
+}
+.projects-box:hover{
+    background: white;
+    color: black;
+    border: 5px solid var(--main-color);
+    transform: scale(1.03);
+}
+.projects-box:visited {
+    color: #000; /* Ensures visited links stay black */
+}
+.projects-box .projects-info{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    max-height: 200px;
+    justify-content: left;
+    align-items: baseline;
+    padding: 2rem 2rem;
+}
+.projects-info h4{
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    font-size: 2.5rem;
+    font-weight: 300;
+    line-height: 1.5;
+}
+.projects-info p{
+    font-size: 1.6rem;
+    font-weight: 300;
+    max-height: 100px;
+    line-height: 1.7;
+}
+
+
 .contact{
     background-color: var(--bg-color);
 }
@@ -445,14 +503,125 @@ span{
     font-size: 16px;
     color: white;
 }
+.reflection {
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    font-size: 12px;
+    margin-top: 5rem;
+}
+.reflection h2 {
+    font-size: 3rem;
+    font-weight: 700;
+}
+.reflection .reflection-box {
+    background-color: var(--main-color);
+    height: 1200px;
+    width: 100%;
+    border-radius: 3rem;
+    border: 5px solid transparent;
+    transition: 0.4s ease-in-out;
+    color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 2rem;
+}
+.text-content {
+    flex: 1;
+    margin-right: 2rem;
+}
+.text-content h2 {
+    margin-bottom: 1rem;
+}
+.image-stack {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 2rem;
+}
+.reflection-img {
+    border-radius: 50%;
+}
+.reflection-img img {
+    position: relative;
+    top: 3rem;
+    width: 24vw;
+    box-shadow: 0 0 25px var(--main-color);
+    cursor: grab;
+    transition: .4s ease-in-out;
+}
+.reflection-img:hover img {
+    box-shadow: 0 0 25px var(--main-color),
+    0 0 50px var(--second-main-color),
+    0 0 100px var(--second-main-color);
+}
+.text-content {
+    flex: 1; /* Allows text to take up available space */
+}
 
+.text-content h2 {
+    font-size: 3rem; /* Slightly larger for the main heading */
+    font-weight: 700;
+    margin-bottom: 2rem; /* More space below the main heading */
+    margin-top: 0; /* No top margin for the first heading */
+    color: #333; /* Darker text for contrast */
+}
 
+.text-content h3 {
+    font-size: 2rem; /* Smaller for subheadings */
+    font-weight: 600;
+    margin-bottom: 1.5rem; /* Space below subheadings */
+    margin-top: 2rem; /* Space above subheadings */
+    color: #444; /* Slightly lighter for hierarchy */
+}
 
+.text-content h4 {
+    font-size: 1.5rem; /* Even smaller for sub-subheadings */
+    font-weight: 500;
+    margin-bottom: 1rem; /* Space below h4 */
+    margin-top: 1.5rem; /* Space above h4 */
+    color: #555; /* Lighter for further hierarchy */
+}
 
+.text-content p {
+    margin-bottom: 1.5rem; /* More space below paragraphs */
+    text-align: left; /* Ensures text aligns left */
+    line-height: 1.5;
+}
 
+.text-content ul {
+    margin-bottom: 1.5rem; /* Space below lists */
+    padding-left: 1.5rem; /* Indents lists for clarity */
+    list-style-type: disc; /* Uses bullet points */
+}
 
+.text-content li {
+    margin-bottom: 0.8rem; /* Space between list items */
+    line-height: 1.5; /* Improves readability within lists */
+    text-align: left; /* Ensures list items align left */
+}
+.download-section {
+    text-align: left; /* Aligns the button and text to the left, matching text alignment */
+}
 
+.download-button {
+    display: inline-block;
+    padding: 1rem 2rem;
+    background-color: var(--second-main-color);
+    color: #000;
+    border-radius: 3rem;
+    border: 2px solid transparent;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 600;
+    transition: 0.4s ease-in-out;
+    cursor: pointer;
+}
 
-
-
-
+.download-button:hover {
+    background-color: white;
+    color: black;
+    border: 2px solid var(--main-color);
+    transform: scale(1.05);
+}
