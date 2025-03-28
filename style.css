@@ -390,7 +390,7 @@ span{
     transform: scale(1.03);
 }
 .projects-box:visited {
-    color: #000; /* Ensures visited links stay black */
+    color: #000;
 }
 .projects-box .projects-info{
     display: flex;
@@ -624,4 +624,46 @@ span{
     color: black;
     border: 2px solid var(--main-color);
     transform: scale(1.05);
+}
+
+
+.reflection2 {
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    font-size: 12px;
+    margin-top: 5rem;
+}
+.reflection2 h2 {
+    font-size: 3rem;
+    font-weight: 700;
+}
+.reflection2 .reflection-box2 {
+    background-color: var(--main-color);
+    height: 2000px;
+    width: 100%;
+    border-radius: 3rem;
+    border: 5px solid transparent;
+    transition: 0.4s ease-in-out;
+    color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 2rem;
+}
+.reflection-img2 {
+    border-radius: 50%;
+}
+.reflection-img2 img {
+    position: relative;
+    top: 3rem;
+    width: 24vw;
+    box-shadow: 0 0 25px var(--main-color);
+    cursor: grab;
+    transition: .4s ease-in-out;
+}
+.reflection-img2:hover img {
+    box-shadow: 0 0 25px var(--main-color),
+    0 0 50px var(--second-main-color),
+    0 0 100px var(--second-main-color);
 }
