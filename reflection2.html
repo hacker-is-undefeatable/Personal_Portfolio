@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1" />
+    <title> Reflection 1</title>
+    <link rel="stylesheet" type="text/css"
+          href="https://hacker-is-undefeatable.github.io/Personal_Portfolio/style.css" />
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+</head>
+<body>
+
+<header class="header">
+    <a href="/" class="logo"> William <span> Man </span> </a>
+
+    <i class='bx bx-menu' id="menu-icon"></i>
+
+    <nav class="navbar">
+        <a href="/">Home</a>
+        <a href="/#experience">Experience</a>
+        <a href="/#projects" class="active">Projects Reflection</a>
+        <a href="/#contact">Contact</a>
+    </nav>
+</header>
+
+<section id="reflection" class="reflection2">
+    <div class="reflection">
+        <div class="reflection-box2">
+            <div class="text-content">
+                <h2>Personal Reflection 2: Human-Robot Interaction for Hospitality</h2>
+                <h3>Project Description and Goal</h3>
+                <p>
+                    Project 2 challenged us to design a human-robot interaction (HRI) solution, specifically a voice
+                    agent or chatbot, to enhance hospitality services for a specific user group. Our group focused on
+                    new immigrants from Mainland China arriving in Hong Kong aged 18-35. The goal was to empathize with
+                    their needs, ideate a practical solution and prototype a working chatbot to assist them in a
+                    hospitality scenario such as ordering at a local tea cafe, while also addressing broader cultural
+                    and social integration challenges. We aimed to create a web application with a chatbot, forum and
+                    activity features. Also, we do usability testing in a video demo and a class presentation.
+                </p>
+                <h3>Learning and Execution Process</h3>
+                <h4>1. Empathizing with Users</h4>
+                    <p>
+                        We took the lead in researching the experiences of new immigrants in Hong Kong, focusing on
+                        their challenges with Cantonese, cultural adaptation and daily interactions. My groupmate
+                        interviewed a
+                        friend who recently moved from Shanghai to HKUST, asking about her struggles with ordering food
+                        in Cantonese. Her insights about not understanding HK slang and feeling isolated in group chats
+                        inspired us to propose the tea cafe scenario.
+                    </p>
+                    <p>
+                        I also walked around Mong Kok and Causeway Bay, observing how newcomers interacted with local
+                        cafes and noting their hesitation when ordering. I documented these observations with photos
+                        and notes in a Google Doc, which I shared with my group to ground our empathy phase in
+                        real-world evidence.
+                    </p>
+                <h4>2. Ideation and Brainstorming</h4>
+                    <p>
+                        During our group brainstorming session, I suggested we focus on a hospitality scenario where
+                        language barriers are immediate and tangible—ordering at a tea cafe. We used Miro to construct
+                        a point of view (POV): “New immigrants need a Cantonese learning tool for daily communication.”
+                        My groupmate contributed by sketching a storyboard of a user arriving at a cafe, struggling to
+                        order, and using our chatbot to learn phrases like “ngo yiu yum bui cha” (I want a cup of tea).
+                    </p>
+                    <p>
+                        My groupmates also proposed integrating cultural guidance (e.g., slang explainers) into the
+                        chatbot, drawing from our observations. We speed-dated our ideas with peers, and our tea cafe
+                        scenario received positive feedback for its practicality, helping us narrow our focus.
+                    </p>
+                <h4>3. Prototyping</h4>
+                    <p>
+                        I was responsible for designing the chatbot’s conversational flow and building a working
+                        prototype. Using Streamlit, I created a system that responds to queries like “How do I order
+                        milk tea in Cantonese?” with text and audio output. I programmed the chatbot to handle not just
+                        cafe-related questions, like ordering food, menu inquiries and basic phrase learning, but also
+                        broader topics about HK culture and Cantonese, addressing any user questions in these areas. I
+                        also added a feature to recommend activities tailored to users’ interests, pulling data from a
+                        personal information form they fill out at login. Adding audio was vital, as the PDF highlighted
+                        Cantonese as a major barrier for new immigrants. For the audio, I integrated the Google
+                        Text-to-Speech API to generate Cantonese phrases (e.g., “ngo yiu yat bui nai cha” for “I want a
+                        cup of milk tea”), which saved time and ensured clarity. Beyond functionality, I taught myself
+                        to design a strong interface with Streamlit, prioritizing clean layouts and intuitive navigation
+                        to ensure the chatbot was easy to use. I rigorously tested the prototype, fine-tuning it for
+                        reliable, accurate responses across all features and prepared it for integration into the
+                        group’s web application.
+                    </p>
+                <p>
+                    I also built the login system for the chatbot using Supabase, enabling secure storage and management
+                    of user data. With Supabase, I set up a backend to handle authentication and store information from
+                    the personal information form users complete at login, such as their interests and preferences.
+                    This allowed the chatbot to personalize activity recommendations and tailor responses based on
+                    individual profiles. Learning to integrate Supabase with Streamlit was a new challenge for me,
+                    but it paid off by making the user experience more dynamic and relevant. I tested the system to
+                    ensure data was saved accurately and retrieved smoothly, enhancing the chatbot’s overall
+                    functionality.
+                </p>
+                <p>
+                    Additionally, I created a calendar feature within the prototype, letting users enter details for
+                    their own events. Using Streamlit’s interactive components, I designed a simple form where users
+                    can input event names, dates and descriptions, which are then displayed in a clean, organized
+                    calendar view. I linked this to the Supabase database to store event data persistently, tying it
+                    to each user’s account so they could track their plans—like attending a recommended activity or
+                    a personal outing. This required me to learn how to manage date inputs and render them effectively
+                    in the interface. After some trial and error, I got it working seamlessly, adding practical value
+                    for new immigrants adjusting to life in Hong Kong.
+                </p>
+                <h4>4. Presentation and Usability Testing</h4>
+                <p>
+                    For the in-class presentation, I focused on showcasing the features of my prototype, walking the
+                    audience through the chatbot’s conversational flow, the Supabase login system, and the calendar
+                    functionality. I explained how the chatbot handles cafe-related queries like “How do I order milk
+                    tea in Cantonese?” using Google Text-to-Speech for audio and expands to answer questions about HK
+                    culture and Cantonese, while also recommending personalized activities based on user login data.
+                    I highlighted the Streamlit interface I designed and how the calendar allows users manage their
+                    events.
+                </p>
+                <p>
+                    My groupmate took charge of the usability testing, conducting it with 2 HKUST students and recording
+                    a video demo. While I didn’t run the testing myself, I was glad to see my prototype hold up in
+                    action and appreciated how the feedback validated its core features.
+                </p>
+                <h3>Personal Reflection</h3>
+                <p>
+                    This project opened my eyes to the real struggles new immigrants face in Hong Kong, like mastering
+                    Cantonese and adapting to a new culture, which I hadn’t fully appreciated before. Building the
+                    chatbot’s conversational flow with Streamlit was both challenging and rewarding, also pushed me
+                    to think broadly about user needs. Integrating the Google Text-to-Speech API was a smart workaround
+                    for audio and it taught me how to leverage external tools effectively.
+                </p>
+                <p>
+                    Adding the Supabase login system and calendar feature deepened my technical skills, connecting a
+                    database to Streamlit was tricky at first, but troubleshooting authentication and data storage gave
+                    me a confidence boost. The calendar, in particular, felt like a personal win; seeing it display
+                    user events smoothly after wrestling with date inputs was satisfying. I learned to balance
+                    functionality with practicality, some early ideas (like overly complex personalization) had to be
+                    scaled back to keep the prototype reliable.
+                </p>
+                <p>
+                    This experience sharpened my problem-solving and made me more empathetic to newcomers’ challenges.
+                    I contributed the core interactive pieces, the chatbot, login and calendar, which felt like the
+                    backbone of our solution and seeing them come together in the group’s web app was motivating. I’d
+                    love to explore more advanced features next time, like real-time speech input and apply this
+                    user-focused mindset to other contexts.
+                </p>
+                <h3>Download Presentation Slide</h3>
+                <div class="download-section">
+                    <a href="https://hacker-is-undefeatable.github.io/Personal_Portfolio/HCI_proj2.pptx"
+                       download="HCI_proj2.pptx" class="download-button">
+                        Download Presentation Slide (PPTX)
+                    </a>
+                </div>
+            </div>
+            <div class="image-stack">
+                <div class="reflection-img">
+                    <img src="https://hacker-is-undefeatable.github.io/Personal_Portfolio/Reflection2_img1.jpeg" alt="">
+                </div>
+                <div class="reflection-img">
+                    <img src="https://hacker-is-undefeatable.github.io/Personal_Portfolio/Reflection2_img2.jpeg" alt="">
+                </div>
+                <div class="reflection-img">
+                    <img src="https://hacker-is-undefeatable.github.io/Personal_Portfolio/Reflection2_img3.jpeg" alt="">
+                </div>
+                <div class="reflection-img">
+                    <img src="https://hacker-is-undefeatable.github.io/Personal_Portfolio/Reflection2_img4.jpeg" alt="">
+                </div>
+                <div class="reflection-img">
+                    <img src="https://hacker-is-undefeatable.github.io/Personal_Portfolio/Reflection2_img5.jpeg" alt="">
+                </div>
+                <div class="reflection-img">
+                    <img src="https://hacker-is-undefeatable.github.io/Personal_Portfolio/Reflection2_img6.jpeg" alt="">
+                </div>
+                <div class="reflection-img">
+                    <img src="https://hacker-is-undefeatable.github.io/Personal_Portfolio/Reflection2_img7.jpeg" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer class="footer">
+    <div class="social">
+        <a href="#">
+            <i class='bx bxl-linkedin'></i>
+        </a>
+        <a href="#">
+            <i class='bx bxl-github'></i>
+        </a>
+        <a href="#">
+            <i class='bx bxl-instagram-alt'></i>
+        </a>
+        <a href="#">
+            <i class='bx bxl-twitter'></i>
+        </a>
+    </div>
+
+    <ul class="list">
+        <li>
+            <a href="#">FAQ</a>
+        </li>
+        <li>
+            <a href="#">Experience</a>
+        </li>
+        <li>
+            <a href="#">About Me</a>
+        </li>
+        <li>
+            <a href="/#contact">Contact</a>
+        </li>
+    </ul>
+    <p class="copyright">&#169; William Man | All Rights Reserved</p>
+</footer>
+
+</body>
+</html>
