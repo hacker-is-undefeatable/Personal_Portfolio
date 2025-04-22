@@ -667,3 +667,23 @@ span{
     0 0 50px var(--second-main-color),
     0 0 100px var(--second-main-color);
 }
+.video-box {
+    background-color: var(--main-color);
+    height: 800px;
+    width: 100%;
+    border-radius: 3rem;
+    border: 5px solid transparent;
+    transition: 0.4s ease-in-out;
+    color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 2rem;
+}
+.video-box video {
+    width: 100%; /* Make video take full width of video-box */
+    height: auto; /* Maintain aspect ratio */
+    max-width: 100%; /* Prevent video from exceeding video-box width */
+    display: block; /* Remove any inline spacing issues */
+    border-radius: 8px; /* Optional: round corners */
+}
