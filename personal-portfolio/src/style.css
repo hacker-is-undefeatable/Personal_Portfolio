@@ -125,7 +125,7 @@ span{
 .home-img:hover img{
     box-shadow: 0 0 25px var(--main-color),
                 0 0 50px var(--main-color),
-                0 0 100px var(--main-color),;
+                0 0 100px var(--main-color);
 }
 .home-content p{
     font-size: 1.5rem;
@@ -211,7 +211,7 @@ span{
 }
 @keyframes cursor{
     to{
-        border-left: 2px solid var(--main-color);
+        border-left: 0px solid var(--main-color);
     }
 }
 @keyframes words{
@@ -284,8 +284,8 @@ span{
     content: "";
     position: absolute;
     width: 5px;
-    height: 340%;
-    background: linear-gradient(to bottom, #000000 0%, #fcb7ff 10%, #fcb7ff 90%, #000000 100%);
+    height: 110%;
+    background: linear-gradient(to bottom, #131313 0%, #fcb7ff 10%, #fcb7ff 90%, #131313 100%);
     left: calc(50%);
     top: -50px;
 }
@@ -312,7 +312,7 @@ span{
     position: absolute;
     left: calc(50% - 8px);
     border-radius: 50%;
-    top: 150px;
+    transition: top 0.5s ease-in-out;
 }
 .timeline-date{
     font-size: 20px;
@@ -321,29 +321,56 @@ span{
     margin: 6px 0 15px;
 }
 .timeline-content{
-    background-color: var(--bg-color);
+    background-color: var(--second-bg-color);
     border: 3px solid var(--main-color);
-    padding: 30px 50px;
+    padding: 25px 40px;
     border-radius: 4rem;
     box-shadow: 0 0 10px var(--main-color);
-    cursor: pointer;
     transition: .3s ease-in-out;
 }
 .timeline-content:hover{
     transform: scale(1.05);
     box-shadow: 0 0 25px var(--main-color);
 }
+.timeline-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
 .timeline-content h3{
     font-size: 20px;
     color: white;
-    margin: 0 0 10px;
+    margin: 0;
     font-weight: 500;
 }
-.timeline-content p{
+.timeline-content p, ul{
     color: white;
     font-size: 16px;
     font-weight: 300;
     line-height: 22px;
+    margin-top: 20px;
+}
+.timeline-content li{
+    margin-top: 15px;
+}
+.timeline-content ul {
+    max-height: 500px;
+    opacity: 1;
+    overflow: hidden;
+    transition: max-height 0.5s ease-in-out, opacity 0.5s ease-in-out;
+}
+.timeline-content ul.hidden {
+    max-height: 0;
+    opacity: 0;
+}
+.show-more-btn {
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+}
+.show-more-btn.rotated {
+    transform: rotate(90deg);
 }
 ::-webkit-scrollbar{
     width: 15px;
