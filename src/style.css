@@ -267,27 +267,27 @@ span{
 }
 /* About Section */
 .about {
-    display: flex;
     align-items: center;
     justify-content: center;
-    gap: 15rem;
     background: var(--bg-color);
     padding: 10rem 12% 10rem;
 }
 
 .about-content {
     display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 10rem;
+    flex-direction: column; /* Stack image and text vertically */
+    align-items: center; /* Center content horizontally */
+    justify-content: center; /* Center content vertically */
+    gap: 4rem; /* Reduced gap for vertical layout */
     width: 100%;
+    max-width: 800px; /* Limit width for better readability */
 }
 
 .about-text {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    text-align: left;
+    align-items: center; /* Center text content */
+    text-align: center; /* Center-align text */
     max-width: 600px;
 }
 
@@ -333,24 +333,6 @@ span{
     left: 0;
     color: var(--main-color);
     font-size: 2rem;
-}
-
-.about-img {
-    border-radius: 50%;
-}
-
-.about-img img {
-    width: 20vw;
-    max-width: 250px;
-    border-radius: 50%;
-    box-shadow: 0 0 25px var(--main-color);
-    transition: .4s ease-in-out;
-}
-
-.about-img:hover img {
-    box-shadow: 0 0 25px var(--main-color),
-                0 0 50px var(--main-color),
-                0 0 100px var(--main-color);
 }
 .experience{
     padding: 100px 15px 200px 15px;
