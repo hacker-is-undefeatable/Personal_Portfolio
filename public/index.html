@@ -2,8 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8" />
-    <meta name="viewport"
-          content="width=device-width, initial-scale=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Personal Portfolio</title>
     <link rel="stylesheet" type="text/css" href="https://raw.githubusercontent.com/hacker-is-undefeatable/Personal_Portfolio/refs/heads/main/src/style.css" />
     <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
@@ -14,9 +13,10 @@
     <i class='bx bx-menu' id="menu-icon"></i>
     <nav class="navbar">
         <a href="#home" class="active">Home</a>
-        <a href="#about">About</a> <!-- Added About link -->
+        <a href="#about">About</a>
         <a href="#experience">Experience</a>
-        <a href="#projects">?</a>
+        <a href="#projects">Projects</a>
+        <a href="#tech-stack">Tech Stack</a>
         <a href="#contact">Contact</a>
     </nav>
 </header>
@@ -25,8 +25,7 @@
     <div class="home-content">
         <h1>Hi, I'm <span>William</span></h1>
         <h3 class="text-animation">I'm a <span></span></h3>
-        <p>TBD</p>
-
+        <p>I’m a passionate developer with a focus on creating innovative web and AI solutions. With a background in computer science, I specialize in frontend and backend development, machine learning, and user experience design. I enjoy tackling complex challenges and building user-friendly applications that make a difference. In my free time, I explore new technologies, contribute to open-source projects, and mentor aspiring developers.</p>
         <div class="social-icons">
             <a href="http://www.linkedin.com/in/chun-hei-william-man-238609347">
                 <i class='bx bxl-linkedin'></i>
@@ -41,7 +40,6 @@
                 <i class='bx bxl-twitter'></i>
             </a>
         </div>
-
         <div class="btn-group">
             <a href="#" class="btn">Hire</a>
             <a href="#contact" class="btn">Contact</a>
@@ -60,117 +58,110 @@
             <p>
                 I’m a passionate developer with a focus on creating innovative web and AI solutions. With a background in computer science, I specialize in frontend and backend development, machine learning, and user experience design. I enjoy tackling complex challenges and building user-friendly applications that make a difference. In my free time, I explore new technologies, contribute to open-source projects, and mentor aspiring developers.
             </p>
-            <div class="skills">
-                <h4>Skills</h4>
-                <ul>
-                    <li>React & JavaScript</li>
-                    <li>Python & Machine Learning</li>
-                    <li>Web Development (HTML, CSS, WordPress)</li>
-                    <li>UI/UX Design</li>
-                    <li>Database Management (SQL)</li>
-                </ul>
-            </div>
         </div>
     </div>
 </section>
 
 <section class="experience" id="experience">
     <h2 class="heading">Experience</h2>
-
     <div class="timeline-items">
       <div class="timeline-item">
         <div class="timeline-dot"></div>
-          <div class="timeline-date">
-              July 2025 – Present
+        <div class="timeline-date">July 2025 – Present</div>
+        <div class="timeline-content">
+          <div class="timeline-header">
+            <h3>Cantonese Transcription Platform, Founder</h3>
+            <img src="https://raw.githubusercontent.com/hacker-is-undefeatable/Personal_Portfolio/refs/heads/gh-pages/arrow.png" class="show-more-btn" alt="Toggle details">
           </div>
-          <div class="timeline-content">
-            <div class="timeline-header">
-              <h3>Cantonese Transcription Platform, Founder</h3>
-              <img src="https://raw.githubusercontent.com/hacker-is-undefeatable/Personal_Portfolio/refs/heads/gh-pages/arrow.png" class="show-more-btn" alt="Toggle details">
-            </div>
-            <ul class="hidden">
-                <li>Fine-tuned the Whisper model using a custom Cantonese audio dataset achieving 95% transcription accuracy</li>
-                <li>Built the website using React for both frontend and backend development, integrated with an SQL database</li>
-            </ul>
-          </div>
+          <ul class="hidden">
+            <li>Fine-tuned the Whisper model using a custom Cantonese audio dataset achieving 95% transcription accuracy</li>
+            <li>Built the website using React for both frontend and backend development, integrated with an SQL database</li>
+          </ul>
+        </div>
       </div>
-
       <div class="timeline-item">
         <div class="timeline-dot"></div>
-          <div class="timeline-date">
-              June 2025 – August 2025
+        <div class="timeline-date">June 2025 – August 2025</div>
+        <div class="timeline-content">
+          <div class="timeline-header">
+            <h3>WMCube, Fintech System and AI Project Developer Intern</h3>
+            <img src="https://raw.githubusercontent.com/hacker-is-undefeatable/Personal_Portfolio/refs/heads/gh-pages/arrow.png" class="show-more-btn" alt="Toggle details">
           </div>
-          <div class="timeline-content">
-            <div class="timeline-header">
-              <h3>WMCube, Fintech System and AI Project Developer Intern</h3>
-              <img src="https://raw.githubusercontent.com/hacker-is-undefeatable/Personal_Portfolio/refs/heads/gh-pages/arrow.png" class="show-more-btn" alt="Toggle details">
-            </div>
-            <ul class="hidden">
-                <li>Implemented and backtested quantitative trading algorithms using Python, optimizing high-frequency trading strategies to enhance execution efficiency and performance</li>
-                <li>Utilized Python and Selenium to develop web scraping tools for extracting fund price data within a specified timeframe</li>
-                <li>Performed User Acceptance Testing for company mobile app to ensure functionality, usability and performance</li>
-                <li>Developed the company homepage using WordPress, creating a user-friendly interface to showcase news and services</li>
-            </ul>
-          </div>
+          <ul class="hidden">
+            <li>Implemented and backtested quantitative trading algorithms using Python, optimizing high-frequency trading strategies to enhance execution efficiency and performance</li>
+            <li>Utilized Python and Selenium to develop web scraping tools for extracting fund price data within a specified timeframe</li>
+            <li>Performed User Acceptance Testing for company mobile app to ensure functionality, usability and performance</li>
+            <li>Developed the company homepage using WordPress, creating a user-friendly interface to showcase news and services</li>
+          </ul>
         </div>
-
+      </div>
       <div class="timeline-item">
         <div class="timeline-dot"></div>
-          <div class="timeline-date">
-              June 2024 - August 2024
+        <div class="timeline-date">June 2024 - August 2024</div>
+        <div class="timeline-content">
+          <div class="timeline-header">
+            <h3>Life Science & Chemistry Web Project, Machine Learning Engineer</h3>
+            <img src="https://raw.githubusercontent.com/hacker-is-undefeatable/Personal_Portfolio/refs/heads/gh-pages/arrow.png" class="show-more-btn" alt="Toggle details">
           </div>
-          <div class="timeline-content">
-            <div class="timeline-header">
-              <h3>Life Science & Chemistry Web Project, Machine Learning Engineer</h3>
-              <img src="https://raw.githubusercontent.com/hacker-is-undefeatable/Personal_Portfolio/refs/heads/gh-pages/arrow.png" class="show-more-btn" alt="Toggle details">
-            </div>
-            <ul class="hidden">
-                <li>Developed a web platform with a finetuned chatbot and VR for molecular visualization</li>
-                <li>Fine-tuned the Llama-2-7b model using domain-specific datasets, improving chatbot accuracy for precise responses in molecular science queries</li>
-                <li>Conducted user research to refine chatbot performance and enhance user engagement for VR-based learning</li>
-            </ul>
-          </div>
+          <ul class="hidden">
+            <li>Developed a web platform with a finetuned chatbot and VR for molecular visualization</li>
+            <li>Fine-tuned the Llama-2-7b model using domain-specific datasets, improving chatbot accuracy for precise responses in molecular science queries</li>
+            <li>Conducted user research to refine chatbot performance and enhance user engagement for VR-based learning</li>
+          </ul>
         </div>
-
+      </div>
       <div class="timeline-item">
         <div class="timeline-dot"></div>
-          <div class="timeline-date">
-              June 2023 - August 2023
+        <div class="timeline-date">June 2023 - August 2023</div>
+        <div class="timeline-content">
+          <div class="timeline-header">
+            <h3>English Learning Platform Project, Lead Developer</h3>
+            <img src="https://raw.githubusercontent.com/hacker-is-undefeatable/Personal_Portfolio/refs/heads/gh-pages/arrow.png" class="show-more-btn" alt="Toggle details">
           </div>
-          <div class="timeline-content">
-            <div class="timeline-header">
-              <h3>English Learning Platform Project, Lead Developer</h3>
-              <img src="https://raw.githubusercontent.com/hacker-is-undefeatable/Personal_Portfolio/refs/heads/gh-pages/arrow.png" class="show-more-btn" alt="Toggle details">
-            </div>
-            <ul class="hidden">
-                <li>Developed Python-based programs for data cleaning and corpus extraction from business textbooks</li>
-                <li>Created an English learning platform for business students, focusing on automated quiz content generation</li>
-            </ul>
-          </div>
+          <ul class="hidden">
+            <li>Developed Python-based programs for data cleaning and corpus extraction from business textbooks</li>
+            <li>Created an English learning platform for business students, focusing on automated quiz content generation</li>
+          </ul>
         </div>
-
+      </div>
       <div class="timeline-item">
         <div class="timeline-dot"></div>
-          <div class="timeline-date">
-              2022 July – Present
+        <div class="timeline-date">2022 July – Present</div>
+        <div class="timeline-content">
+          <div class="timeline-header">
+            <h3>Program for the Gifted and Talented, Teaching Assistant</h3>
+            <img src="https://raw.githubusercontent.com/hacker-is-undefeatable/Personal_Portfolio/refs/heads/gh-pages/arrow.png" class="show-more-btn" alt="Toggle details">
           </div>
-          <div class="timeline-content">
-            <div class="timeline-header">
-              <h3>Program for the Gifted and Talented, Teaching Assistant</h3>
-              <img src="https://raw.githubusercontent.com/hacker-is-undefeatable/Personal_Portfolio/refs/heads/gh-pages/arrow.png" class="show-more-btn" alt="Toggle details">
-            </div>
-            <ul class="hidden">
-                <li>Support gifted primary and secondary students with lesson delivery and academic guidance</li>
-                <li>Foster critical thinking and problem-solving through interactive learning activities</li>
-            </ul>
-          </div>
+          <ul class="hidden">
+            <li>Support gifted primary and secondary students with lesson delivery and academic guidance</li>
+            <li>Foster critical thinking and problem-solving through interactive learning activities</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+</section>
+
+<section class="tech-stack" id="tech-stack">
+    <h2 class="heading">Tech Stack</h2>
+    <p>Technologies and tools I work with to build innovative solutions.</p>
+    <div class="ticker">
+        <div class="ticker-content">
+            <img src="img/img1.png" alt="Tech 1">
+            <img src="img/img2.png" alt="Tech 2">
+            <img src="img/img3.png" alt="Tech 3">
+            <img src="img/img4.png" alt="Tech 4">
+            <img src="img/img5.png" alt="Tech 5">
+            <img src="img/img6.png" alt="Tech 6">
+            <img src="img7.jpg" alt="Tech 7">
+            <img src="img8.jpg" alt="Tech 8">
+            <img src="img9.jpg" alt="Tech 9">
+            <img src="img10.jpg" alt="Tech 10">
         </div>
     </div>
 </section>
 
 <section class="contact" id="contact">
     <h2 class="heading">Contact <span>Me</span></h2>
-
     <form action="">
         <div class="input-group">
             <div class="input-box">
@@ -182,7 +173,6 @@
                 <input type="text" placeholder="Subject">
             </div>
         </div>
-
         <div class="input-group-2">
             <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
             <input type="submit" value="Send Message" class="btn">
@@ -205,20 +195,11 @@
             <i class='bx bxl-twitter'></i>
         </a>
     </div>
-
     <ul class="list">
-        <li>
-            <a href="#">FAQ</a>
-        </li>
-        <li>
-            <a href="#">Experience</a>
-        </li>
-        <li>
-            <a href="#">About Me</a>
-        </li>
-        <li>
-            <a href="/#contact">Contact</a>
-        </li>
+        <li><a href="#">FAQ</a></li>
+        <li><a href="#">Experience</a></li>
+        <li><a href="#">About Me</a></li>
+        <li><a href="/#contact">Contact</a></li>
     </ul>
     <p class="copyright">&#169; William Man | All Rights Reserved</p>
 </footer>
@@ -235,15 +216,12 @@ function updateTimelineDots() {
     });
 }
 
-// Ensure dots are positioned correctly after all content (including images) is loaded
 window.addEventListener('load', () => {
     updateTimelineDots();
 });
 
-// Update dots when window is resized
 window.addEventListener('resize', updateTimelineDots);
 
-// Update dots when show-more-btn is clicked, after animation completes
 document.querySelectorAll('.show-more-btn').forEach(button => {
     button.addEventListener('click', () => {
         const ul = button.parentElement.nextElementSibling;
@@ -254,11 +232,7 @@ document.querySelectorAll('.show-more-btn').forEach(button => {
             ul.classList.add('hidden');
             button.classList.remove('rotated');
         }
-        // Wait for the transition to complete before updating dots
         ul.addEventListener('transitionend', updateTimelineDots, { once: true });
     });
 });
 </script>
-
-</body>
-</html>
