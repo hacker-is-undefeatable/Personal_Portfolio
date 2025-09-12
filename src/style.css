@@ -640,7 +640,7 @@ span {
     justify-content: center;
     gap: 20px;
     flex-wrap: wrap; /* Fallback for older browsers */
-    max-width: 1000px; /* Adjust this value as needed */
+    max-width: 800px; /* Adjust this value as needed */
     margin-left: auto;
     margin-right: auto;
 }
@@ -692,7 +692,7 @@ span {
 }
 
 #tech-stack-show-more.rotated img {
-    transform: rotate(90deg);
+    transform: rotate(-90deg);
 }
 
 /* Optional: Mobile responsiveness */
