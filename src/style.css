@@ -461,7 +461,7 @@ span {
     width: 50%;
     margin: 0 auto;
     padding: 10px 0;
-    background: -webkit-linear-gradient(90deg, #ffffff00 0%, #ffffffff 10%, #ffffffff 90%, #ffffff00 100%);
+    /* background: -webkit-linear-gradient(90deg, #ffffff00 0%, #ffffffff 10%, #ffffffff 90%, #ffffff00 100%); */
 }
 .ticker-content {
     display: inline-flex;
@@ -598,4 +598,113 @@ span {
 .fade-in-scroll.visible {
     opacity: 1;
     transform: translateY(0);
+}
+
+.tech-stack-details {
+    text-align: center;
+    margin-top: 20px;
+    position: relative;
+}
+
+.tech-stack-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease-in-out, opacity 0.5s ease-in-out;
+    opacity: 0;
+    margin-top: 20px;
+}
+
+.tech-stack-content.hidden {
+    max-height: 0;
+    opacity: 0;
+}
+
+.tech-stack-content.visible {
+    max-height: 1000px; /* Adjust based on content height */
+    opacity: 1;
+}
+
+.tech-category {
+    margin-bottom: 40px;
+}
+
+.tech-category h3 {
+    font-size: 2.5rem;
+    color: var(--text-color);
+    margin-bottom: 20px;
+}
+
+.tech-logos {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap; /* Fallback for older browsers */
+    max-width: 1000px; /* Adjust this value as needed */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.tech-logos a {
+    display: inline-block;
+    text-decoration: none;
+}
+
+.tech-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.tech-logos img {
+    height: 60px;
+    width: 60px; /* Fixed width to ensure uniformity in grid */
+    object-fit: contain; /* Ensures logos scale properly without distortion */
+    opacity: 0.7;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.tech-logos span {
+    font-size: 12px; /* Small text size */
+    color: var(--text-color);
+    margin-top: 5px; /* Space between image and text */
+    text-transform: uppercase; /* Optional: for a clean look */
+    font-weight: 500;
+    white-space: nowrap; /* Prevents text wrapping */
+}
+
+.tech-logos img:hover {
+    opacity: 1;
+}
+
+#tech-stack-show-more {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+#tech-stack-show-more img {
+    width: 24px;
+    height: 24px;
+}
+
+#tech-stack-show-more.rotated img {
+    transform: rotate(90deg);
+}
+
+/* Optional: Mobile responsiveness */
+@media (max-width: 768px) {
+    .tech-logos {
+        grid-template-columns: repeat(3, 1fr); /* 3 per row on mobile */
+    }
+    .tech-logos img {
+        height: 50px;
+        width: 50px;
+    }
+    .tech-logos span {
+        font-size: 10px; /* Smaller text on mobile */
+    }
 }
