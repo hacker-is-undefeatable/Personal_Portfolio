@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Personal Portfolio</title>
-    <link rel="stylesheet" type="text/css" href="https://raw.githubusercontent.com/hacker-is-undefeatable/Personal_Portfolio/refs/heads/main/src/style.css" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
     <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
 </head>
 <body>
@@ -22,7 +22,7 @@
 </header>
 
 <section class="home" id="home">
-    <div class="home-content">
+    <div class="home-content fade-in">
         <h1>Hi, I'm <span>William</span></h1>
         <h3 class="text-animation">I'm a <span></span></h3>
         <p>I’m a passionate developer with a focus on creating innovative web and AI solutions. With a background in computer science, I specialize in frontend and backend development, machine learning, and user experience design. I enjoy tackling complex challenges and building user-friendly applications that make a difference. In my free time, I explore new technologies, contribute to open-source projects, and mentor aspiring developers.</p>
@@ -45,12 +45,12 @@
             <a href="#contact" class="btn">Contact</a>
         </div>
     </div>
-    <div class="home-img">
+    <div class="home-img fade-in">
         <img src="https://raw.githubusercontent.com/hacker-is-undefeatable/Personal_Portfolio/refs/heads/main/image.jpg" alt="">
     </div>
 </section>
 
-<section class="about" id="about">
+<section class="about fade-in-scroll" id="about">
     <h2 class="heading">About <span>Me</span></h2>
     <div class="about-content">
         <div class="about-text">
@@ -62,88 +62,87 @@
     </div>
 </section>
 
-<section class="experience" id="experience">
+<section class="experience fade-in-scroll" id="experience">
     <h2 class="heading">Experience</h2>
     <div class="timeline-items">
-      <div class="timeline-item">
-        <div class="timeline-dot"></div>
-        <div class="timeline-date">July 2025 – Present</div>
-        <div class="timeline-content">
-          <div class="timeline-header">
-            <h3>Cantonese Transcription Platform, Founder</h3>
-            <img src="https://raw.githubusercontent.com/hacker-is-undefeatable/Personal_Portfolio/refs/heads/gh-pages/arrow.png" class="show-more-btn" alt="Toggle details">
-          </div>
-          <ul class="hidden">
-            <li>Fine-tuned the Whisper model using a custom Cantonese audio dataset achieving 95% transcription accuracy</li>
-            <li>Built the website using React for both frontend and backend development, integrated with an SQL database</li>
-          </ul>
+        <div class="timeline-item fade-in-scroll">
+            <div class="timeline-dot"></div>
+            <div class="timeline-date">July 2025 – Present</div>
+            <div class="timeline-content">
+                <div class="timeline-header">
+                    <h3>Cantonese Transcription Platform, Founder</h3>
+                    <img src="https://raw.githubusercontent.com/hacker-is-undefeatable/Personal_Portfolio/refs/heads/gh-pages/arrow.png" class="show-more-btn" alt="Toggle details">
+                </div>
+                <ul class="hidden">
+                    <li>Fine-tuned the Whisper model using a custom Cantonese audio dataset achieving 95% transcription accuracy</li>
+                    <li>Built the website using React for both frontend and backend development, integrated with an SQL database</li>
+                </ul>
+            </div>
         </div>
-      </div>
-      <div class="timeline-item">
-        <div class="timeline-dot"></div>
-        <div class="timeline-date">June 2025 – August 2025</div>
-        <div class="timeline-content">
-          <div class="timeline-header">
-            <h3>WMCube, Fintech System and AI Project Developer Intern</h3>
-            <img src="https://raw.githubusercontent.com/hacker-is-undefeatable/Personal_Portfolio/refs/heads/gh-pages/arrow.png" class="show-more-btn" alt="Toggle details">
-          </div>
-          <ul class="hidden">
-            <li>Implemented and backtested quantitative trading algorithms using Python, optimizing high-frequency trading strategies to enhance execution efficiency and performance</li>
-            <li>Utilized Python and Selenium to develop web scraping tools for extracting fund price data within a specified timeframe</li>
-            <li>Performed User Acceptance Testing for company mobile app to ensure functionality, usability and performance</li>
-            <li>Developed the company homepage using WordPress, creating a user-friendly interface to showcase news and services</li>
-          </ul>
+        <div class="timeline-item fade-in-scroll">
+            <div class="timeline-dot"></div>
+            <div class="timeline-date">June 2025 – August 2025</div>
+            <div class="timeline-content">
+                <div class="timeline-header">
+                    <h3>WMCube, Fintech System and AI Project Developer Intern</h3>
+                    <img src="https://raw.githubusercontent.com/hacker-is-undefeatable/Personal_Portfolio/refs/heads/gh-pages/arrow.png" class="show-more-btn" alt="Toggle details">
+                </div>
+                <ul class="hidden">
+                    <li>Implemented and backtested quantitative trading algorithms using Python, optimizing high-frequency trading strategies to enhance execution efficiency and performance</li>
+                    <li>Utilized Python and Selenium to develop web scraping tools for extracting fund price data within a specified timeframe</li>
+                    <li>Performed User Acceptance Testing for company mobile app to ensure functionality, usability and performance</li>
+                    <li>Developed the company homepage using WordPress, creating a user-friendly interface to showcase news and services</li>
+                </ul>
+            </div>
         </div>
-      </div>
-      <div class="timeline-item">
-        <div class="timeline-dot"></div>
-        <div class="timeline-date">June 2024 - August 2024</div>
-        <div class="timeline-content">
-          <div class="timeline-header">
-            <h3>Life Science & Chemistry Web Project, Machine Learning Engineer</h3>
-            <img src="https://raw.githubusercontent.com/hacker-is-undefeatable/Personal_Portfolio/refs/heads/gh-pages/arrow.png" class="show-more-btn" alt="Toggle details">
-          </div>
-          <ul class="hidden">
-            <li>Developed a web platform with a finetuned chatbot and VR for molecular visualization</li>
-            <li>Fine-tuned the Llama-2-7b model using domain-specific datasets, improving chatbot accuracy for precise responses in molecular science queries</li>
-            <li>Conducted user research to refine chatbot performance and enhance user engagement for VR-based learning</li>
-          </ul>
+        <div class="timeline-item fade-in-scroll">
+            <div class="timeline-dot"></div>
+            <div class="timeline-date">June 2024 - August 2024</div>
+            <div class="timeline-content">
+                <div class="timeline-header">
+                    <h3>Life Science & Chemistry Web Project, Machine Learning Engineer</h3>
+                    <img src="https://raw.githubusercontent.com/hacker-is-undefeatable/Personal_Portfolio/refs/heads/gh-pages/arrow.png" class="show-more-btn" alt="Toggle details">
+                </div>
+                <ul class="hidden">
+                    <li>Developed a web platform with a finetuned chatbot and VR for molecular visualization</li>
+                    <li>Fine-tuned the Llama-2-7b model using domain-specific datasets, improving chatbot accuracy for precise responses in molecular science queries</li>
+                    <li>Conducted user research to refine chatbot performance and enhance user engagement for VR-based learning</li>
+                </ul>
+            </div>
         </div>
-      </div>
-      <div class="timeline-item">
-        <div class="timeline-dot"></div>
-        <div class="timeline-date">June 2023 - August 2023</div>
-        <div class="timeline-content">
-          <div class="timeline-header">
-            <h3>English Learning Platform Project, Lead Developer</h3>
-            <img src="https://raw.githubusercontent.com/hacker-is-undefeatable/Personal_Portfolio/refs/heads/gh-pages/arrow.png" class="show-more-btn" alt="Toggle details">
-          </div>
-          <ul class="hidden">
-            <li>Developed Python-based programs for data cleaning and corpus extraction from business textbooks</li>
-            <li>Created an English learning platform for business students, focusing on automated quiz content generation</li>
-          </ul>
+        <div class="timeline-item fade-in-scroll">
+            <div class="timeline-dot"></div>
+            <div class="timeline-date">June 2023 - August 2023</div>
+            <div class="timeline-content">
+                <div class="timeline-header">
+                    <h3>English Learning Platform Project, Lead Developer</h3>
+                    <img src="https://raw.githubusercontent.com/hacker-is-undefeatable/Personal_Portfolio/refs/heads/gh-pages/arrow.png" class="show-more-btn" alt="Toggle details">
+                </div>
+                <ul class="hidden">
+                    <li>Developed Python-based programs for data cleaning and corpus extraction from business textbooks</li>
+                    <li>Created an English learning platform for business students, focusing on automated quiz content generation</li>
+                </ul>
+            </div>
         </div>
-      </div>
-      <div class="timeline-item">
-        <div class="timeline-dot"></div>
-        <div class="timeline-date">2022 July – Present</div>
-        <div class="timeline-content">
-          <div class="timeline-header">
-            <h3>Program for the Gifted and Talented, Teaching Assistant</h3>
-            <img src="https://raw.githubusercontent.com/hacker-is-undefeatable/Personal_Portfolio/refs/heads/gh-pages/arrow.png" class="show-more-btn" alt="Toggle details">
-          </div>
-          <ul class="hidden">
-            <li>Support gifted primary and secondary students with lesson delivery and academic guidance</li>
-            <li>Foster critical thinking and problem-solving through interactive learning activities</li>
-          </ul>
+        <div class="timeline-item fade-in-scroll">
+            <div class="timeline-dot"></div>
+            <div class="timeline-date">2022 July – Present</div>
+            <div class="timeline-content">
+                <div class="timeline-header">
+                    <h3>Program for the Gifted and Talented, Teaching Assistant</h3>
+                    <img src="https://raw.githubusercontent.com/hacker-is-undefeatable/Personal_Portfolio/refs/heads/gh-pages/arrow.png" class="show-more-btn" alt="Toggle details">
+                </div>
+                <ul class="hidden">
+                    <li>Support gifted primary and secondary students with lesson delivery and academic guidance</li>
+                    <li>Foster critical thinking and problem-solving through interactive learning activities</li>
+                </ul>
+            </div>
         </div>
-      </div>
     </div>
 </section>
 
-<section class="tech-stack" id="tech-stack">
+<section class="tech-stack fade-in-scroll" id="tech-stack">
     <h2 class="heading">Tech Stack</h2>
-    <p>Technologies and tools I work with to build innovative solutions.</p>
     <div class="ticker">
         <div class="ticker-content">
             <a href="https://www.python.org/" target="_blank">
@@ -210,7 +209,7 @@
     </div>
 </section>
 
-<section class="contact" id="contact">
+<section class="contact fade-in-scroll" id="contact">
     <h2 class="heading">Contact <span>Me</span></h2>
     <form action="">
         <div class="input-group">
@@ -285,4 +284,63 @@ document.querySelectorAll('.show-more-btn').forEach(button => {
         ul.addEventListener('transitionend', updateTimelineDots, { once: true });
     });
 });
+
+// Navbar highlighting for scroll and click
+document.addEventListener('DOMContentLoaded', () => {
+    const sections = document.querySelectorAll('section[id]');
+    const navLinks = document.querySelectorAll('.navbar a');
+
+    // Click event for navbar links
+    navLinks.forEach(link => {
+        link.addEventListener('click', (e) => {
+            e.preventDefault();
+            navLinks.forEach(l => l.classList.remove('active'));
+            link.classList.add('active');
+            const targetId = link.getAttribute('href').substring(1);
+            const targetSection = document.getElementById(targetId);
+            targetSection.scrollIntoView({ behavior: 'smooth' });
+        });
+    });
+
+    // Scroll event with IntersectionObserver
+    const observerOptions = {
+        root: null,
+        rootMargin: '0px',
+        threshold: 0.5
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                const id = entry.target.getAttribute('id');
+                navLinks.forEach(link => {
+                    link.classList.remove('active');
+                    if (link.getAttribute('href') === `#${id}`) {
+                        link.classList.add('active');
+                    }
+                });
+            }
+        });
+    }, observerOptions);
+
+    sections.forEach(section => observer.observe(section));
+
+    // Fade-in on scroll
+    const fadeInElements = document.querySelectorAll('.fade-in-scroll');
+    const fadeObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('visible');
+                fadeObserver.unobserve(entry.target);
+            }
+        });
+    }, {
+        root: null,
+        threshold: 0.1
+    });
+
+    fadeInElements.forEach(element => fadeObserver.observe(element));
+});
 </script>
+</body>
+</html>
