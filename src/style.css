@@ -371,7 +371,7 @@ span {
     position: absolute;
     left: calc(50% - 8px);
     border-radius: 50%;
-    transition: top 0.5s ease-in-out; /* Ensure smooth transition for dot movement */
+    transition: top 0.3s ease-in-out; /* Ensure smooth transition for dot movement */
 }
 .timeline-date {
     font-size: 20px;
@@ -676,24 +676,6 @@ span {
 .tech-logos img:hover {
     opacity: 1;
 }
-
-#tech-stack-show-more {
-    background: none;
-    border: none;
-    cursor: pointer;
-    padding: 10px;
-    transition: transform 0.3s ease-in-out;
-}
-
-#tech-stack-show-more img {
-    width: 24px;
-    height: 24px;
-}
-
-#tech-stack-show-more.rotated img {
-    transform: rotate(-90deg);
-}
-
 /* Optional: Mobile responsiveness */
 @media (max-width: 768px) {
     .tech-logos {
